@@ -11,9 +11,10 @@
  *
  * Copyright (C) OpenMRS, LLC.  All Rights Reserved.
  */
-package org.openmrs.module.basicmodule.extension.html;
+package org.openmrs.module.myfirst.extension.html;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import org.openmrs.module.Extension;
@@ -37,7 +38,7 @@ public class AdminList extends AdministrationSectionExt {
 	 * @see org.openmrs.module.web.extension.AdministrationSectionExt#getTitle()
 	 */
 	public String getTitle() {
-		return "basicmodule.title";
+		return "My First Module";
 	}
 	
 	/**
@@ -45,9 +46,10 @@ public class AdminList extends AdministrationSectionExt {
 	 */
 	public Map<String, String> getLinks() {
 		
-		Map<String, String> map = new HashMap<String, String>();
+		Map<String, String> map = new LinkedHashMap<String, String>();
 		
-		map.put("module/basicmodule/basicmoduleLink.form", "basicmodule.replace.this.link.name");
+		//map.put("module/basicmodule/basicmoduleLink.form", "basicmodule.replace.this.link.name");
+		map.put("/module/myFirstModule/basicmoduleForm.form", "My First Module");
 		
 		return map;
 	}

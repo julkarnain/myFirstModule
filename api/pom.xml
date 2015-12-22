@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>basicmodule</artifactId>
+		<artifactId>myFirstModule</artifactId>
 		<version>0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>basicmodule-api</artifactId>
+	<artifactId>myFirstModule-api</artifactId>
 	<packaging>jar</packaging>
-	<name>Basic Module API</name>
-	<description>API project for Basic Module</description>
+	<name>My First Module API</name>
+	<description>API project for My First Module</description>
 </project>

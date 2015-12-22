@@ -7,12 +7,12 @@
 	<name>${project.parent.name}</name>
 	<version>${project.parent.version}</version>
 	<package>${MODULE_PACKAGE}</package>
-	<author>Ben Wolfe</author>
+	<author>Julkar Nain</author>
 	<description>
-			${project.parent.description}
+		${project.parent.description}
 	</description>
 
-	<activator>${MODULE_PACKAGE}.BasicModuleActivator</activator>
+	<activator>org.openmrs.module.myfirst.BasicModuleActivator</activator>
 	
 	<!-- <updateURL>https://modules.openmrs.org/modules/download/@MODULE_ID@/update.rdf</updateURL> -->
 	<!-- /Base Module Properties -->
@@ -22,7 +22,7 @@
 	<!-- Extensions -->
 	<extension>
 		<point>org.openmrs.admin.list</point>
-		<class>${MODULE_PACKAGE}.extension.html.AdminList</class>
+		<class>org.openmrs.module.myfirst.extension.html.AdminList</class>
 	</extension>
 	
 	
